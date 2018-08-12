@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pump Scenario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="scene" id="scene">
+      <a href="index.html">this will take you Home</a>
+       <p>
+         All you need to do is refresh the page and a new "scenario" will appear. Hose lines are from 1.75" - 3" You will need to solve for the first scenario, and when you solve for the first section the next part of the scenario will populate.
+       </p>
+       <p>This is a test to see how to dynamically put the values into words in HTML</p>
+       <p><strong>You arrive on scene to a fully involved structure fire. The officer tells you that you are going to be taking a defensive attack on the fire. He tells you that you are going to be setting up a ground monitor. As you get out of the truck the officer is telling the firefighter to grab the <span class="scene-5"></span> foot <span class="scene-hose"></span> line from the back of the truck and attach the ground monitor <span class="scene-nozzle"></span> end on it.<span class="scene-rand-tip"></span> The firefighter begins advancing the line and gets it into place. He radios in that he is ready for water. What psi are you going to run the line at for this scenario?</strong></p>
+       <p>You will notice that every time you refresh the page that the values change in the middle
+        of the sentences. This is how the scenario will be dynamically populated</p>
+
+        <input id="numb">
+        <button class="sub-but" type="button" onclick="checkMath(), showMore()">Submit</button>
+        <p id="demo"></p>
+
+      <div class="math-box">
+       <p>If i have the coefficient I can run the math on any line we have avalible.</p>
+       <p>This is the hose diameter = <span class="scene-8"></span></p>
+       <p>This is the coefficient = <span class="scene-1"></span></p>
+       <p>This is the GPM = <span class="scene-2"></span></p>
+       <p>This is the Hose Length = <span class="scene-3"></span></p>
+       <p>This is the Nozzle Pressure = <span class="scene-6"></span></p>
+       <p>This is the PSI needed for the elevation = <span class="scene-7"></span></p>
+       <p>This is the Total friction loss = <span class="scene-4"></span></p>
+     </div>
+     <div class="more-scene">
+       <br>
+       <p><strong>Command has been established and the next incoming unit is coming up to the scene awaiting assignment. As they are walking up your officer tells them to pull a <span class="scene-5-2"></span> foot <span class="scene-hose-2"></span> line from the truck<span class="scene-nozzle-2"></span> <span class="scene-tip-2"></span>What psi are you going to run the second line at for this scenario?</strong></p>
+
+        <input id="numb-2">
+        <button type="button" onclick="checkMath2()">Submit</button>
+        <p id="demo-2"></p>
+
+      <div class="math-box">
+       <p>If i have the coefficient I can run the math on any line we have avalible.</p>
+       <p>This is the hose diameter = <span class="scene-8-2"></span></p>
+       <p>This is the coefficient = <span class="scene-1-2"></span></p>
+       <p>This is the GPM = <span class="scene-2-2"></span></p>
+       <p>This is the Hose Length = <span class="scene-3-2"></span></p>
+       <p>This is the Nozzle Pressure = <span class="scene-6-2"></span></p>
+       <p>This is the PSI needed for the elevation = <span class="scene-7-2"></span></p>
+       <p>This is the Total friction loss = <span class="scene-4-2"></span></p>
+     </div>
+    </div>
+    <script src="scripts/monitor-line.js"></script>
+  </body>
+</html>

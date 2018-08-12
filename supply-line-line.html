@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pump Scenario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="scene" id="scene">
+      <a href="index.html">this will take you Home</a>
+      <h3>This will solve the friction loss for two attack hand lines.</h3>
+       <p>
+         All you need to do is refresh the page and a new "scenario" will appear. Hose lines are from 1.75" - 3" You will need to solve for the first scenario, and when you solve for the first section the next part of the scenario will populate.
+       </p>
+       <p>This is a test to see how to dynamically put the values into words in HTML</p>
+       <p><strong>You arrive on scene to an apartment complex with report of a fire on the <span class="scene-elevation"></span>. The officer tells you that in order to reach the seat of the fire we are going to need to make a courtyard lay. As the officer is conducting a 360, you and the fire fighter are starting to get the lay prepared. The officer comes back to the truck and says that we are are going to need to pull a <span class="scene-supply-hose"></span> foot <span class="scene-supply-dia"></span> supply line with a <span class="scene-5"></span> foot <span class="scene-hose"></span> attack line in order to reach the fire. You start pulling off the supply line portion, and the firefighter is getting the attack line ready. When you get back to the truck the firefighter is just finishing with getting the attack line ready for deployment. You see that he has <span class="scene-nozzle"></span> The officer and firefighter begin stretching the line and tell you that they will radio when they are ready for water. You head back to the pump panel to get ready and they call for water. What psi are you going to run the line at?
+       </strong></p>
+       <p>You will notice that every time you refresh the page that the values change in the middle
+        of the sentences. This is how the scenario will be dynamically populated</p>
+
+        <input id="numb">
+        <button class="sub-but" type="button" onclick="checkMath(), showMore()">Submit</button>
+        <p id="demo"></p>
+
+      <div class="math-box">
+       <p>If i have the coefficient I can run the math on any line we have avalible.</p>
+       <p>This is the hose diameter = <span class="scene-8"></span></p>
+       <p>This is the coefficient = <span class="scene-1"></span></p>
+       <p>This is the GPM = <span class="scene-2"></span></p>
+       <p>This is the Hose Length = <span class="scene-3"></span></p>
+       <p>This is the Nozzle Pressure = <span class="scene-6"></span></p>
+       <p>This is the PSI needed for the elevation = <span class="scene-7"></span></p>
+       <p>This is the Total friction loss = <span class="scene-4"></span></p>
+     </div>
+     <!-- <div class="more-scene">
+       <br>
+       <p><strong>Command has been established and the next incoming unit is coming up to the scene awaiting assignment. Command tells them to pull a <span class="scene-5-2"></span> foot <span class="scene-hose-2"></span> line from the truck<span class="scene-nozzle-2"></span>The firefighter tells you that they are going to be running the line at <span class="scene-rand-gpm-2"></span> GPM. What psi are you going to run the second line at for this scenario?</strong></p>
+
+        <input id="numb-2">
+        <button type="button" onclick="checkMath2()">Submit</button>
+        <p id="demo-2"></p>
+
+      <div class="math-box">
+       <p>If i have the coefficient I can run the math on any line we have avalible.</p>
+       <p>This is the hose diameter = <span class="scene-8-2"></span></p>
+       <p>This is the coefficient = <span class="scene-1-2"></span></p>
+       <p>This is the GPM = <span class="scene-2-2"></span></p>
+       <p>This is the Hose Length = <span class="scene-3-2"></span></p>
+       <p>This is the Nozzle Pressure = <span class="scene-6-2"></span></p>
+       <p>This is the PSI needed for the elevation = <span class="scene-7-2"></span></p>
+       <p>This is the Total friction loss = <span class="scene-4-2"></span></p>
+     </div>
+    </div> -->
+    <script src="scripts/supply-line-line.js"></script>
+  </body>
+</html>
