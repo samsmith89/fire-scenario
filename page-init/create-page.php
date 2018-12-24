@@ -1,5 +1,7 @@
 <?php
 
+// You are going to need to find a way to save permalink prgramatically
+
 function install_pages(){
         $new_page_title = 'Scenario Start Page';
         $new_page_content = '';
