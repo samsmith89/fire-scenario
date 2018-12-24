@@ -6,6 +6,8 @@
  * and below the answer.
  */
 
+ console.log('this is the fucking show');
+
   //Object for hose line firction loss coefficient
   var coefficient = [15.5, 2];
   var getRandomCoefficient = function () {
